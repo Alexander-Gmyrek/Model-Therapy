@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("images/sample-7.jpg"); /* Pale Dogwood */
+    color: #3a2e39; /* Raisin black */
+}
+
+header {
+    background-color: #3a2e39; /* Raisin black */
+    padding: 20px;
+    text-align: center;
+    color: #f4d8cd; /* Pale Dogwood */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #edb183; /* Buff */
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1); /* Add box shadow for depth */
+    display: grid;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove browser default margins */
+    padding: 0; /* Remove browser default padding */
+    overflow: hidden; /* Fixes float issue */
+    border: 1px solid #3a2e39; /* Raisin black */
+}
+
+nav ul li {
+    float: left; /* Make the list items sit next to each other */
+    border: 1px solid #3a2e39; /* Raisin black */
+}
+
+nav ul li a {
+    display: block; /* Make the whole area clickable, not just the text */
+    padding: 10px 40px; /* Add some padding for spacing */
+    text-decoration: none; /* Remove the underline */
+    color: #3a2e39; /* Raisin Black */
+    transition: 0.3s; /* Add transition for hover effect */
+    font-size: 2em;
+}
+
+nav ul li a:hover {
+    background-color: #3a2e39; /* Raisin Black */
+    color: #f4d8cd; /* Pale Dogwood */
+}
+
+nav ul li a.active {
+    background-color: #3a2e39; /* Raisin Black */
+    color: #f4d8cd; /* Pale Dogwood */
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+section {
+    position: relative;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f4d8cd; /* Pale Dogwood */
+    border: 1px solid #edb183; /* Buff */
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1); /* Add box shadow */
+    max-width: 800px; /* Limit the width */
+    border-radius: 15px; /* Add border radius */
+}
+
+
+
+section::before {
+    top: -15px;
+    border-radius: 100% 100% 0 0 / 50% 50% 0 0;
+}
+
+section::after {
+    bottom: -15px;
+    border-radius: 0 0 100% 100% / 0 0 50% 50%;
+}
+
+footer {
+    background-color: #3a2e39; /* Raisin black */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #f4d8cd; /* Pale Dogwood */
+}
+
+#contactForm input[type="submit"] {
+    background-color: #f15152; /* Imperial red */
+    color: #f4d8cd; /* Pale Dogwood */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#contactForm input[type="submit"]:hover {
+    background-color: #3a2e39; /* Raisin black */
+    color: #f4d8cd; /* Pale Dogwood */
+}
+
+#logo {
+    background-color: #98FB98; /* Pastel Green */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    /* Add a box shadow to the logo */
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    /*have the logo scale to fill the width of the header*/
+    width: 90%;
+    /*have the logo have a margin on both sides*/
+    margin: 0 10px;
+}
+
+#logo h1 {
+    color: #3a2e39; /* Raisin black */
+    font-family: 'Brush Script MT', cursive; /* Fancy script font */
+    font-size: 12.5em;
+    margin: 0;
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+.section-wrapper {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    padding: 20px;
+    background-color: #f4d8cd; /* Pale Dogwood */
+    border: 1px solid #edb183; /* Buff */
+    box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.1); /* Add box shadow */
+}
+
+.ribbon {
+    height: 100px;
+    width: 100%;
+}
+
+section h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    text-align: center;
+}
+section p {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    text-align: left;
+}
+
+#emptybox{
+    height: 40px;
+}
+form input{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #3a2e39; /* Raisin black */
+    padding: 0 10px;
+    font-size: 1em;
+}

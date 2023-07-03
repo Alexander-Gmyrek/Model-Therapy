@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Therapy Practice</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h1>Sample Therapy</h1>
+        </div>
+            
+        <h1>Welcome to Our Therapy Practice</h1>
+    </header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="section-wrapper" style="background-image: url('');">
+            <section id="about">
+                <h2>About Us</h2>
+                <p>We are a team of professional therapists dedicated to providing a safe, supportive environment for our clients. Our practice is based on the belief that everyone has the capacity for growth and change. We offer a variety of therapeutic approaches to help you explore your feelings, understand your challenges, and develop effective coping strategies.</p>
+            </section>
+
+            <div class="ribbon" dataColor = "#98FB98"></div>
+        </div>
+        
+        <div class="section-wrapper" style="background-color: #98FB98;">
+            <section id="services" data-background="url('images/sample-2.jpg')">
+                <h2>Our Services</h2>
+                <p>We offer a range of services to meet the diverse needs of our clients. These include individual therapy, couples therapy, family therapy, and group therapy. Our therapists specialize in a variety of areas, including anxiety, depression, trauma, relationship issues, and more. We are committed to helping our clients achieve their goals and live more fulfilling lives.</p>
+            </section>
+            <div class="ribbon" dataColor = "#fdfffd"></div>
+        </div>
+        <div class="section-wrapper" style="background-color: #fdfffd;">
+            <section id="contact" data-background="url('images/sample-3.jpg')">
+                <h2>Contact Us</h2>
+                <form id = "contactForm">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="request">Request:</label><br>
+                    <input type="text" id="request" name="request"><br>
+                    <input type="submit" value="Submit">
+                </form>
+        </section>
+        </div>
+        <div id = "emptybox"></div>
+    </main>
+    <footer>
+        <p>© 2023 Therapy Practice</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
